@@ -141,8 +141,7 @@ footer {
 
 @media screen and (min-width: 880px){
     body {
-        width: 880px;
-        
+        width: 880px;     
     }
 
     h1 {
@@ -150,56 +149,49 @@ footer {
     }
 
     nav {
-        display: inline-block
-        justify-content center;
+        display: inline-block;
+        width: 100%;
+  
     }
 
     ul {
         text-align: center;
     }
 
-    #gallery {
+    #galleryWrapper {
+        width: 50%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template: "galleryTitle galleryTitle"
-                       "galleryPara galleryPara"
-                       "leftColumn rightColumn"
-                       ;
+        grid-gap: 5px;
     }
 
-    #gallery h2{
-        grid-area: galleryTitle;
+    figure {
+        margin: 10px;
+        overflow-y: auto; 
     }
 
-    #gallery p {
-        grid-area: galleryPara;
-    }
-
-    .leftColumn {
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-area: leftColumn;
-    }
-
-    .rightColumn {
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-area: rightColumn;
-    }
-
-    #contact {
-        display: flex;
-    }
-
-    #contact p {
-        text-align: center;
-    }
-
-    [type ="text"], [type = "email"] {
-        width: 500px;
-    }
+    
 }
 
 @media screen and (min-width: 1300px) {
-    
+    body {
+        width: 880px;
+    }
+
+    h1 {
+        text-align: right;
+        padding-right: 15px;
+    }
+
+    #galleryWrapper {
+        width: 25%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template: "leftColumn middleColumn rightColumn";
+    }
+
+    figure {
+        margin: 10px;
+
+    }
 }
