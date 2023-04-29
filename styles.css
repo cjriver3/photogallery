@@ -74,17 +74,31 @@ nav li {
     visibility: hidden;
 }
 
-figure {
+.bottomCaption {
     display: flex;
     flex-flow: column;
-    flex-direction: column-reverse;
 }
 
-figcaption {
+.bottomCaption figcaption {
+    position: relative;
+    bottom: 2em;
+    text-align: center;
+}
+
+.topCaption {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.topCaption figcaption{
     position: relative;
     top: 2em;
     text-align: center;
+}
 
+figcaption {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /*Form adjustments*/
