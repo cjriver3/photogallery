@@ -9,25 +9,25 @@
 </head>
 <body>
 
-    <header>
+    <header id="top">
         <h1>TK Photography</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#top">top</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">top</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <h2>About</h2>
+        <h2 id="about">About</h2>
         <p>Hello!</p>
         <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
 
-        <section id="Photogallery">
+        <section id="gallery">
             <h2>Gallery</h2>
             <p>Here are some highlights of my work. The locations and year are in the caption.</p>
             
@@ -92,7 +92,7 @@
             </figure>
         </section>
 
-        <section id="Contact">
+        <section id="contact">
             <h2>Contact</h2>
             <p>Please fill out this form and I’ll connect with you soon.</p>
 
@@ -103,6 +103,9 @@
 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="(Enter your email address)">
+
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" placeholder="(What can I help you with?)">
 
                 <input type="submit" value="Submit">
 
