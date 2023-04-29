@@ -187,8 +187,10 @@ footer {
         width: 25%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template: "leftColumn middleColumn rightColumn";
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
+
+    
 
     figure {
         margin: 10px;
